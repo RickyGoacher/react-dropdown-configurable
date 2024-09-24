@@ -1,0 +1,31 @@
+.dropdown .button {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.dropdown.active .button span {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: relative;
+    width: fit-content;
+}
+
+.dropdown .content {
+    display: none;
+}
+
+.dropdown .item {
+    cursor: pointer;
+}
+
+.dropdown.active .content {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
